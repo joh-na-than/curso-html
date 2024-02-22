@@ -1,0 +1,30 @@
+<script>
+
+document.writeln("autor johnatan carlosama <BR>")
+
+var qven = parseInt(prompt("ingrese la cantidad de vendedores de la empresa"));
+var vendedores = 0;
+var comtotal = 0;
+for(var i = 0; i < qven; i++) {
+     var nombre = prompt("ingrese el nombre del vendedor #"+ (i+1));
+     var art = parseInt( prompt("ingrese la cantidad de articulos vendidos por el vendedor #"+ (i+1)));
+     vendedores({ nombre, art});
+     for(var j=0; j<art;j++){
+        var venta= parseInt(prompt("ingrese el valor del articulo", (j+1,"venta del vendedor #",(i+1))));
+        vendedores({venta});
+        if (venta <100000){
+            comision =venta *0,25;
+        }else{
+            comision = venta *0,75
+        }
+        comtotal = comision +comtotal;
+     }
+      document.writeln("el vendedor ",nombre, "tiene comision de:",comtotal,"<BR>");
+        comtotal=0;
+}
+
+
+
+
+
+</script>

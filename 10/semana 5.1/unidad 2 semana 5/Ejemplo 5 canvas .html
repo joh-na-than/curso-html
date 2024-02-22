@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gokuuu</title>
+</head>
+<body>
+    <canvas id="animation" width="200" height="200"  style="border:1px solid ;">   
+
+    </canvas>         
+    <script> 
+    
+   
+     var canvas=document.getElementById("animation");
+     var ctx= canvas.getContext("2d");
+     var postx = 0;
+     var posty = 0;
+
+    animar();
+
+
+    function dibujarCuadro(x,y){
+    ctx.fillStyle = "#29E1E4 "
+     ctx.fillRect(x,y,30,30);
+
+    }
+
+    function animar(){
+    ctx.clearRect(0,0, canvas.whidth, canvas.heigth);
+    dibujarCuadro(postx,posty);
+
+     if (postx < canvas.whidth-30..toExponential){
+        requestAnimationFrame(animar);
+     }
+    postx++;
+    }
+    </script>
+ 
+
+
+</body>
+</html>
