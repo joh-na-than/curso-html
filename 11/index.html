@@ -7,70 +7,45 @@
     
     <style>
 
-         p { margin-left:20px; }
+        body, html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
 
-       #encabezado{text-align: center;
-             width: 100%;
-             height:100px;
-             background-color: aqua;
-             color: black;
-             display: inline-block;
-       }
-
-       #content{
-            width: 150%;
-            height: 430px;
-            background-color: rgb(211, 211, 25);
-            color: blue;
-            display: table-cell;
-       }
- 
-       #menu{
-        width: 100px;
-        height: 430px;
-        background-color: rgb(184, 178, 199);
-        display: table-cell;
-       }
-
-        #contenido{
-            width: 1184px;
-            height: 430px;
-            background-color: aqua;
-            display: inline-block;
-            position: absolute;
-            top: 108px;
-            left: 158px;
         }
-       
+        #encabezado{
+            height: 10%;
+            width: 100%;
+            color:aliceblue;
+            background-color: black;
+            text-align: center;
+        }
 
+        #contenedorprincipal{
+            display: flex;
+        }
 
+        #barralateral{
+            height: 80vh;
+            width: 20%;
+            background-color: aquamarine;
+        }
 
+        
+            #contenido{
+            flex-grow: 1;
+            height: 80vh;
+            background-color: blueviolet;
+        }
 
-
-
-
-
-
-
-
-
-
-
-        #pie{text-align: center;
-             width: 100%;
-             height:200px;
-             background-color: rgb(201, 144, 40);
-             display: inline-block;
-       }
-
-
-      
-         
-
-         
-          
-     
-
+        #piedepagina{
+            width: 100%;
+            height: 10%;
+            background-color: brown;
+            color: whitesmoke;
+            text-align: center;
+        }
      
     </style>
 
@@ -80,24 +55,38 @@
 <body>  
 
 
-     <div id="encabezado"> <h1>Portafolio Digital</h1></div>
-     <div id="menu"> <h1>opciones </h1>
-     <div id="conteido">
-        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic rem tempora facilis quo perferendis aut expedita id delectus. Veniam magni voluptatum vero adipisci velit iusto, dolorem recusandae aliquam quibusdam?</div>
-        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic rem tempora facilis quo perferendis aut expedita id delectus. Veniam magni voluptatum vero adipisci velit iusto, dolorem recusandae aliquam quibusdam?</div>
-        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic rem tempora facilis quo perferendis aut expedita id delectus. Veniam magni voluptatum vero adipisci velit iusto, dolorem recusandae aliquam quibusdam?</div>
-        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic rem tempora facilis quo perferendis aut expedita id delectus. Veniam magni voluptatum vero adipisci velit iusto, dolorem recusandae aliquam quibusdam?</div>
-        
-
-
-
-
-
+     <div id="encabezado"> 
+        PORTAFOLIO DIGITAL Johnatan Carlosama
      </div>
+
+     <div id="contenedorprincipal"></div>
+
+     <div id="barralateral"> 
+        <h1>MENU </h1>
+     </div>
+
+     <div id="contenido">
+        <h2>Contenido</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aut ab doloremque totam officia tempora quaerat
+        facere, quo et commodi possimus debitis magnam quibusdam delectus quae! Rerum nesciunt ducimus laboriosam.
+    </div>
+    </div>
+
+    <div id="piedepagina">
+        IEM Santa Teresita
+    </div>
+    
+
+
+
+
+     
     
     
-    <div id="pie"><h2>IEM SANTA TERESITA CATAMBUCO</h2></div>
+    
  
     
 </body>
 </html>
+</body>
+</html>--
